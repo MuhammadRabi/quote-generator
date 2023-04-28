@@ -79,3 +79,16 @@ h1{
     grid-column: 2/4;
     grid-row: 1;
 }
+
+.share-btns{
+    display: flex;
+    grid-column: 2;
+    margin-top:10px;
+  
+}
+
+.share-btns svg{
+    cursor:pointer;
+    margin-left:15px;
+    
+}
