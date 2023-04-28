@@ -3,10 +3,12 @@ import React, { useState } from "react";
 import {
   TwitterShareButton,
   WhatsappShareButton,
+  TelegramShareButton,
+  EmailShareButton,
   TwitterIcon,
   WhatsappIcon,
-  TelegramShareButton,
   TelegramIcon,
+  EmailIcon,
 } from "react-share";
 
 const App = () => {
@@ -63,6 +65,13 @@ const App = () => {
             >
               <TelegramIcon size={32} round={true} />
             </TelegramShareButton>
+            <EmailShareButton
+              url={"https://github.com/MuhammadRabi/quote-generator"}
+              subject="Today's Quote"
+              body={`"${quote.content}" - ${quote.author}`}
+            >
+              <EmailIcon size={32} round={true} />
+            </EmailShareButton>
           </div>
         </div>
       </div>

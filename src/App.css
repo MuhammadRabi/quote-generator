@@ -90,5 +90,11 @@ h1{
 .share-btns svg{
     cursor:pointer;
     margin-left:15px;
+    opacity:0.7;
     
+}
+
+.share-btns svg:hover{
+    opacity: 1;
+    transition: 0.3s ease-in-out;
 }
